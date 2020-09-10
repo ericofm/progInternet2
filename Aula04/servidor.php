@@ -1,6 +1,6 @@
 <?php
     header("Content-type: application/json");
-    $conn = mysqli_connect("localhost","root","852123","api_rest");
+    $conn = mysqli_connect("localhost","root"," ","api_rest");
 
     if($conn){
         $result = mysqli_query($conn , "SELECT * FROM tbl_produtos");
