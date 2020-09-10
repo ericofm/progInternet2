@@ -1,0 +1,13 @@
+{
+    "nome" : "Érico",
+    "idade" : 38,
+    "altura" : 1.70,
+    "casado" : false,
+    "filhos" : [
+        {"nome" : "Inácio", "idade" : 2},
+        {"nome" : "Elisa", "idade" : 1}
+    ],
+    "conjuge" : {"nome" : "Quem sabe um dia", "idade" : 30},
+    "profissao" : ["Empreendedor", "Analista de Dados"],
+    "endereco" : null
+}

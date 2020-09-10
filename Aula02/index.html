@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade Aula 02 - HTML FORMULÁRIO, JS e JQuery</title>
+        <script src="script.js"></script>
+        <script src="jquery_3.5.1.min.js"></script>
+    </head>
+    <body>
+        <form name="meuForm" action="salvar.php" onsubmit="return validaForm()" method="POST">
+            <label>Nome: </label>
+            <input type="text" name="txtNome">
+            <input type="submit" value="Salvar" />
+        </form>
+        <hr>
+        <br><br>
+        <p>Insira valores de 1 a 10: </p>
+        <input id="txtValor">
+        <button onclick="validarNumero()">Enviar</button>
+        <p id="resultado"></p>
+
+        <script>
+            aulaObjeto();
+        </script>
+
+        <hr>
+        <h1>Trabalhando com JQuery</h1>
+        <br><br>
+        <h3>Olá!</h3>
+        <button id="btnEsconder">Esconder</button>
+        <hr>
+        <div class="div01">
+            <h4>Métodos GET e SET</h4>
+        </div>
+        <button id="btnTexto">Pegar o texto</button>
+        <button id="btnHTML">Pegar o HTML</button>
+        
+        <div class="div02">
+        </div>
+
+        <script>
+            $("#btnTexto").click( function(){
+                var texto = $(".div01").text();
+                $(".div02").text( texto );
+            })
+        </script>
+
+        <script>
+            $("#btnHTML").click( function(){
+                var texto = $(".div01").html();
+                $(".div02").html( texto );
+            })
+        </script>
+
+        <script>
+            $("#btnEsconder").click(function() {
+                $("h3").toggle(1500, function() {
+                    alert("Terminou a execução");
+                });
+            });
+        </script>
+
+    </body>
+</html>

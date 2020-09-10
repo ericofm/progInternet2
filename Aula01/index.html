@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade Aula 01 - HTML DOM</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h2>HTML DOM - Métodos</h2>
+        <p id="pGetId"></p>
+        <!-- script passa o Id e conteúdo HMTL para o elemento -->
+        <script>
+            document.getElementById("pGetId").innerHTML="getElementById() <hr>";
+        </script>
+        <p id="pInner"></p>
+        <script>
+            document.getElementById("pInner").innerHTML="innerHTML() <hr>";
+        </script>
+
+        <div id="div01">
+            Olá Mundo!
+            <hr>
+        </div>
+        <button onclick="trocar()">Trocar</button>
+        <div id="div02">
+        </div>
+        <script>
+            function trocar(){
+                var div01 = document.getElementById("div01");
+                var conteudo = div01.innerHTML
+                var div02 = document.getElementById("div02");
+                div02.innerHTML = conteudo
+                div01.innerText = "Olá novamente!"
+            }
+        </script>
+        <button onmouseover="mostrarAlerta()">Botão 02</button>
+        <br>
+        <div>
+            <div>
+                <script>
+                    document.write("Calculadora <hr>");
+                    alert("Iniciando a calculadora");
+                    console.log("Passei por aqui!");
+                </script>
+                <label>Valor: </label>
+                <input type="text" id="textValor"/>
+                <button onclick="calcular()">Multiplicar por 2</button>
+                <br>
+                <label>Resultado: </label>
+                <label id="labelResultado"></label>
+            </div>
+        </div>
+        
+    </body>
+</html>
