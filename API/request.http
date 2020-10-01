@@ -1,0 +1,10 @@
+
+http://localhost:8001/pessoas/
+
+###
+
+http://localhost:8001/pessoas/2
+
+###
+
+POST  http://localhost:8001/pessoas/
