@@ -1,0 +1,16 @@
+
+http://localhost:8001/produtos
+
+###
+
+POST http://localhost:8001/produtos/add
+
+###
+
+http://localhost:8001/produtos/1
+
+###
+PUT http://localhost:8001/produtos/update/8
+
+###
+DELETE http://localhost:8001/produtos/delete/5
