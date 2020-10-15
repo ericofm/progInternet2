@@ -7,7 +7,7 @@
 <?php
 	function conecta_bd()
 	{
-	$link=mysqli_connect("localhost","root","852123","api_rest");
+	$link=mysqli_connect("localhost","root"," ","api_rest");
 	//para tratar caracteres especiais nas operações sobre a base de dados
 		mysqli_query($link, "SET NAMES 'utf8'");
 		mysqli_query($link, 'SET character_set_connection=utf8');
