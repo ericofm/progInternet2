@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade Aula 09 - ATIVIDADE AVALIATIVA COM JS e JQuery</title>
+        <script src="script.js"></script>
+        <script src="jquery_3.5.1.min.js"></script>
+    </head>
+    <body>
+        <h1>Aula 09 - ATIVIDADE AVALIATIVA | Érico F. Moraes</h1>
+        <form name="meuForm" action="cadastrar.php" onsubmit="return validaForm()" method="POST">
+            <label>Nome: </label><input type="text" name="txtNome"><br><br>
+            <label>E-mail: </label><input type="text" name="txtMail"><br><br>
+            <label>Telefone: </label><input type="text" name="txtFone"><br><br>
+            <input type="submit" value="Salvar" />
+        </form>
+        <hr>
+
+        <h2>Listar todos os Clientes</h2>
+        <br>
+
+        <div id="dinamico"></div>
+        <button onclick="lerDinamico()">Listar Clientes</button>
+
+        <button id="btnEsconder">Ocultar/Exibir lista</button>
+
+        <script>
+            $("#btnEsconder").click(function() {
+                $("div").toggle(1500, function() {
+                });
+            });
+        </script>
+
+    </body>
+</html>
